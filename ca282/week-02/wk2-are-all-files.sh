@@ -2,5 +2,5 @@
 
 for v in "$@"
 do
-  echo "$v"
+    test -f "$v" || exit "1"
 done
